@@ -9,12 +9,16 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     sender.buttonB()
     storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 })
-radio.comment(input.temperature())
+input.onButtonEvent(Button.AB, ButtonEvent.Hold, function () {
+    sender.setSendReset(true)
+})
 sender.beimStart(storage.getNumber(StorageSlots.s1))
 storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
+radio.comment(radio.radio_text(""))
 loops.everyInterval(400, function () {
     if (sender.isFunktion(sender.eFunktion.ng) && sender.joystickQwiic()) {
         basic.setLedColor(0x00ff00)
+        radio.comment(sender.multiswitchGrove())
         radio.fill_sendBuffer19()
         if (sender.isFunktion(sender.eFunktion.m0_s0)) {
             sender.sendM0(radio.radio_sendBuffer19())
@@ -25,6 +29,7 @@ loops.everyInterval(400, function () {
         } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
             sender.sendMCB(radio.radio_sendBuffer19())
         }
+        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b1, sender.getMagnet())
         radio.sendData(radio.radio_sendBuffer19())
         radio.zeige5x5Buffer(radio.radio_sendBuffer19())
         radio.zeige5x5Joystick(radio.radio_sendBuffer19())
