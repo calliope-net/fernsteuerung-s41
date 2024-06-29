@@ -2,6 +2,9 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
     storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 })
+input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
+    sender.buttonAB()
+})
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     sender.buttonB()
     storage.putNumber(StorageSlots.s1, sender.storageBufferGet())

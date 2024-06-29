@@ -1,10 +1,9 @@
 {
-    "name": "teste fernsteuerung",
+    "name": "teste-fernsteuerung-41",
     "description": "",
     "dependencies": {
         "core": "*",
-        "fernsteuerung": "github:calliope-net/fernsteuerung#master",
-        "radio": "*"
+        "fernsteuerung": "github:calliope-net/fernsteuerung#v0.2.56"
     },
     "files": [
         "main.blocks",
@@ -21,5 +20,5 @@
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
