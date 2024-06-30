@@ -29,7 +29,11 @@ loops.everyInterval(400, function () {
         } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
             sender.sendMCB(radio.radio_sendBuffer19())
         }
-        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b1, sender.getMagnet())
+        if (sender.isModell(sender.eModell.mkck)) {
+            radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b1, sender.getSchalter(sender.eSchalter.Magnet))
+        }
+        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b2, sender.getSchalter(sender.eSchalter.Licht))
+        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b0, sender.joystickButtonPosition())
         radio.sendData(radio.radio_sendBuffer19())
         radio.zeige5x5Buffer(radio.radio_sendBuffer19())
         radio.zeige5x5Joystick(radio.radio_sendBuffer19())
