@@ -28,7 +28,7 @@ loops.everyInterval(400, function () {
         } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
             sender.sendMCB(radio.radio_sendBuffer19())
         }
-        if (sender.isModell(radio.eModell.mkck)) {
+        if (sender.isModell(sender.eModell.mkck)) {
             radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b1, sender.getSchalter(sender.eSchalter.Magnet))
         }
         radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b2, sender.getSchalter(sender.eSchalter.Licht))
