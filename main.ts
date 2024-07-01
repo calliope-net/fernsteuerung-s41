@@ -30,7 +30,7 @@ loops.everyInterval(400, function () {
         if (sender.isFunktion(sender.eFunktion.m0_s0)) {
             sender.sendM0(radio.radio_sendBuffer19())
         } else if (sender.isFunktion(sender.eFunktion.m0_m1_s0)) {
-            sender.sendM01(radio.radio_sendBuffer19())
+            sender.sendM01(radio.radio_sendBuffer19(), 30)
         } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
             sender.sendMAB(radio.radio_sendBuffer19())
         } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
