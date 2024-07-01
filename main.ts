@@ -24,7 +24,7 @@ sender.beimStart(storage.getNumber(StorageSlots.s1))
 storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
 loops.everyInterval(400, function () {
     if (sender.isFunktion(sender.eFunktion.ng) && sender.joystickQwiic()) {
-        basic.setLedColor(7)
+        basic.setLedColor(15)
         radio.comment(sender.multiswitchGrove())
         radio.fill_sendBuffer19()
         if (sender.isFunktion(sender.eFunktion.m0_s0)) {
@@ -36,11 +36,10 @@ loops.everyInterval(400, function () {
         } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
             sender.sendMCB(radio.radio_sendBuffer19())
         }
-        if (sender.isModell(sender.eModell.mkck)) {
-            radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b1, sender.getSchalter(sender.eSchalter.Magnet))
-        }
-        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b2, sender.getSchalter(sender.eSchalter.Licht))
         radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b0, sender.joystickButtonPosition())
+        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b1, sender.getSchalter(sender.eSchalter.A))
+        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b2, sender.getSchalter(sender.eSchalter.B))
+        radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b3, sender.getSchalter(sender.eSchalter.AB))
         radio.sendData(radio.radio_sendBuffer19())
         radio.zeige5x5Buffer(radio.radio_sendBuffer19())
         radio.zeige5x5Joystick(radio.radio_sendBuffer19())

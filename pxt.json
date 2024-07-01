@@ -1,10 +1,10 @@
 {
-    "name": "teste-fernsteuerung-41",
+    "name": "fernsteuerung-s41",
     "version": "0.0.2",
     "description": "",
     "dependencies": {
         "core": "*",
-        "fernsteuerung": "github:calliope-net/fernsteuerung#v0.4.3"
+        "fernsteuerung": "github:calliope-net/fernsteuerung#v0.4.6"
     },
     "files": [
         "main.blocks",
