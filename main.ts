@@ -11,26 +11,28 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 })
 input.onButtonEvent(Button.A, ButtonEvent.Hold, function () {
     radio.setFunkgruppeButton(radio.eFunkgruppeButton.minus)
-    storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
+    storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 })
 input.onButtonEvent(Button.B, ButtonEvent.Hold, function () {
     radio.setFunkgruppeButton(radio.eFunkgruppeButton.plus)
-    storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
+    storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 })
 input.onButtonEvent(Button.AB, ButtonEvent.Hold, function () {
     sender.setSendReset(true)
 })
-sender.beimStart(storage.getNumber(StorageSlots.s1))
+sender.beimStart(
+storage.getNumber(StorageSlots.s1)
+)
 storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
 loops.everyInterval(400, function () {
     if (sender.isFunktion(sender.eFunktion.ng) && sender.joystickQwiic()) {
-        basic.setLedColor(15)
+        basic.setLedColor(0x007fff)
         radio.comment(sender.multiswitchGrove())
         radio.fill_sendBuffer19()
         if (sender.isFunktion(sender.eFunktion.m0_s0)) {
             sender.sendM0(radio.radio_sendBuffer19())
         } else if (sender.isFunktion(sender.eFunktion.m0_m1_s0)) {
-            sender.sendM01(radio.radio_sendBuffer19(), 30)
+            sender.sendM01(radio.radio_sendBuffer19())
         } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
             sender.sendMAB(radio.radio_sendBuffer19())
         } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
