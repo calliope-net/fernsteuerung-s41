@@ -21,6 +21,7 @@ input.onButtonEvent(Button.AB, ButtonEvent.Hold, function () {
     sender.setSendReset(true)
 })
 sender.beimStart(
+true,
 storage.getNumber(StorageSlots.s1)
 )
 storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
