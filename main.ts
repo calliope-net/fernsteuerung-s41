@@ -1,13 +1,13 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
-    storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
+    storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     sender.buttonAB()
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     sender.buttonB()
-    storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
+    storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 })
 input.onButtonEvent(Button.A, ButtonEvent.Hold, function () {
     radio.setFunkgruppeButton(radio.eFunkgruppeButton.minus)
@@ -23,7 +23,7 @@ input.onButtonEvent(Button.AB, ButtonEvent.Hold, function () {
 sender.beimStart(
 storage.getNumber(StorageSlots.s1)
 )
-storage.putNumber(StorageSlots.s1, radio.storageBufferGet())
+storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
 loops.everyInterval(400, function () {
     if (sender.isFunktion(sender.eFunktion.ng) && sender.joystickQwiic()) {
         basic.setLedColor(0x007fff)
