@@ -1,12 +1,15 @@
 function modell_Callibot () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
         sender.sendM0(radio.radio_sendBuffer19())
+        radio.setAbstand(radio.radio_sendBuffer19(), radio.e3Abstand.u3)
+        radio.setSensor(radio.radio_sendBuffer19(), radio.eBufferPointer.m0, radio.eSensor.b6, true)
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         radio.setBetriebsart(radio.radio_sendBuffer19(), radio.e0Betriebsart.p0)
         radio.setaktiviert(radio.radio_sendBuffer19(), radio.e3aktiviert.md, true)
         radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         if (sender.getButtonAB_Counter() == 2) {
             radio.setAbstand(radio.radio_sendBuffer19(), radio.e3Abstand.u1)
+            radio.setSensor(radio.radio_sendBuffer19(), radio.eBufferPointer.m0, radio.eSensor.b6, true)
             radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.mc, radio.eBufferOffset.b0_Motor, radio.speedPicker(100))
             radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b0_Motor, radio.speedPicker(50))
         }
