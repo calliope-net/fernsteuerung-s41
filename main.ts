@@ -4,7 +4,13 @@ function modell_Callibot () {
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         radio.setBetriebsart(radio.radio_sendBuffer19(), radio.e0Betriebsart.p0)
         radio.setaktiviert(radio.radio_sendBuffer19(), radio.e3aktiviert.md, true)
-        radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b1_Servo, 4)
+        radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
+        if (sender.getButtonAB_Counter() == 2) {
+            radio.setAbstand(radio.radio_sendBuffer19(), radio.e3Abstand.u1)
+            radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.mc, radio.eBufferOffset.b0_Motor, radio.speedPicker(100))
+            radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b0_Motor, radio.speedPicker(50))
+        }
+        radio.setaktiviert(radio.radio_sendBuffer19(), radio.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     }
     radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b0, sender.joystickButtonPosition())
 }
