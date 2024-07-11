@@ -3,17 +3,13 @@ function modell_Callibot () {
         sender.sendM0(radio.radio_sendBuffer19())
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         radio.setBetriebsart(radio.radio_sendBuffer19(), radio.e0Betriebsart.p0)
-        radio.setAbstand(radio.radio_sendBuffer19(), radio.e3Abstand.u1)
-        radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.mc, radio.eBufferOffset.b0_Motor, radio.speedPicker(100))
-        radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b0_Motor, radio.speedPicker(50))
-        radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         radio.setaktiviert(radio.radio_sendBuffer19(), radio.e3aktiviert.md, true)
-        radio.setaktiviert(radio.radio_sendBuffer19(), radio.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
+        radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b1_Servo, 4)
     }
     radio.setSchalter(radio.radio_sendBuffer19(), radio.e0Schalter.b0, sender.joystickButtonPosition())
 }
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    if (sender.buttonB()) {
+    if (sender.buttonA()) {
         storage.putNumber(StorageSlots.s1, sender.storageBufferGet())
     }
 })
