@@ -9,7 +9,7 @@ function modell_Callibot () {
         radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         if (sender.getButtonAB_Counter() == 2) {
             radio.setAbstand(radio.radio_sendBuffer19(), radio.e3Abstand.u1)
-            radio.setSensor(radio.radio_sendBuffer19(), radio.eBufferPointer.m0, radio.eSensor.b6, true)
+            radio.setSensor(radio.radio_sendBuffer19(), radio.eBufferPointer.mc, radio.eSensor.b6, true)
             radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.mc, radio.eBufferOffset.b0_Motor, radio.speedPicker(100))
             radio.setByte(radio.radio_sendBuffer19(), radio.eBufferPointer.md, radio.eBufferOffset.b0_Motor, radio.speedPicker(50))
         }
