@@ -114,6 +114,13 @@
 * 4 Modell: CaR 4 (Calliope auf Rädern Version 4)
   * 4.1 CaR 4 *Fahren und Lenken mit Joystick*
 
+### Anzeige in der 5x5 Matrix (25 LED Display)
+
+y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
+---|---|---|---|---
+b5|b4|M1|16|16
+x80|x08|MA|8|8
+
 
 ## Dieses Projekt bearbeiten ![Build status badge](https://github.com/calliope-net/fernsteuerung-s41/workflows/MakeCode/badge.svg)
 
