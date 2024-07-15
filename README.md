@@ -63,7 +63,7 @@
         * Sender kann Funkgruppe ändern und anderes Modell fernsteuern
       * wiederholt **B geklickt**
         * beendet das Beispiel
-        * zurück zu 1.1.2 (A Beispiel wählen, B starten)
+        * zurück zu 1.2 (A Beispiel wählen, B starten)
     * **A+B geklickt**
       * zurück zu 1.1 *Fahren und Lenken mit Joystick*
 
@@ -89,14 +89,14 @@
       * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Seilrolle und Drehkranz*
-  * 3.2 Kran *Seilrolle und Drehkranz* mit Joystick
+  * 3.2 Kran *Seilrolle und Drehkranz mit Joystick*
     * **A geklickt**
       * schaltet Elektromagnet am Kran an/aus
     * **B geklickt**
       * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Zahnstange und Drehkranz*
-  * 3.3 Kran *Zahnstange und Drehkranz* mit Joystick
+  * 3.3 Kran *Zahnstange und Drehkranz mit Joystick*
     * **A geklickt**
       * schaltet Elektromagnet am Kran an/aus
     * **B geklickt**
