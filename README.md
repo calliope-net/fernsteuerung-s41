@@ -23,7 +23,7 @@
     * 1.2 Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
     * 1.3 Maker Kit Car mit Calliope v3 (Leiterplatte) mit Kran (3 Motoren an I²C)
     * 1.4 CaR 4 (Calliope auf Rädern Version 4)
-  * **A+B geklickt** Modell im Flash speichern, wird beim Einschalten ausgewählt
+  * **A+B geklickt** Modell im Flash speichern, wird beim Einschalten wieder hergestellt
   * umschalten auf ein festes Modell 1.1, 1.2, 1.3 oder 1.4
   * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
