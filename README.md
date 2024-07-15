@@ -120,6 +120,9 @@ y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 ---|---|---|---|---
 b5|b4|M1|16|16
 x80|x08|MA|8|8
+x40|x04|MB|4|4
+x20|x02|MC|2|2
+x10|x01|MD|1|1
 
 
 ## Dieses Projekt bearbeiten ![Build status badge](https://github.com/calliope-net/fernsteuerung-s41/workflows/MakeCode/badge.svg)
