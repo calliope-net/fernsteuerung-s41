@@ -54,7 +54,7 @@
       * B schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Gabelstapler*
-    * 1.2.2 langsam *Fahren und Gabelstapler* mit Joystick
+  * 1.2.2 langsam *Fahren und Gabelstapler* mit Joystick
     * **A geklickt** oder **B geklickt**
       * links und rechts lenken (Servo fernsteuern) zum rangieren
 
