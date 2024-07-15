@@ -116,6 +116,8 @@
 
 ### Anzeige in der 5x5 Matrix (25 LED Display)
 
+> Anzeige ist beim Sender und Empfänger identisch
+
 y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 ---|---|---|---|---
 b5|b4|M1|16|16
@@ -123,6 +125,31 @@ x80|x08|MA|8|8
 x40|x04|MB|4|4
 x20|x02|MC|2|2
 x10|x01|MD|1|1
+
+> 8 LEDs (x..) zeigen als 2 HEX Ziffern die Funkgruppe an: 0xA0 bis 0xBF
+
+* Funkgruppe kann mit Tasten **A halten** oder **B halten** jederzeit geändert werden und wird im Flash gespeichert
+
+> alle anderen LEDs zeigen Daten aus dem Datenpaket (19 Byte Buffer *sendData* oder *receivedData*)
+
+* 2 Bit Betriebsart (b5 b4) aus Steuer Byte 0 <code>..xx....</code>
+
+hex|bit|Funktion|bei Ereignis von einem Sensor
+---|---|---|---
+0x00|<code>..00....</code>|Fernsteuerung 6 Motoren|Stop bei Hindernis
+0x10|<code>..01....</code>|Fernsteuerung ein Motor M0|wechselt zum *Programm Sensoren*
+0x20|<code>..10....</code>|Programm 5 Strecken|Stop bei Hindernis
+0x30|<code>..11....</code>|Programm Sensoren|wechselt zum Ereignis-Block
+
+* 5 Bit aktivierte Motoren (M1 MA MB MC MD) aus Steuer-Byte 3 <code>..xxxxxx</code>
+  * jedes Bit aktiviert die entsprechenden 3 Byte (Motor, Servo, Strecke) im Buffer
+  * M0 wird nicht angezeigt (Platzmangel), ist in der Regel aktiv, wenn alle 5 LEDs aus sind
+  * je nach Betriebsart werden Motoren, Fahrstrecken oder Sensor-Ereignisse aktiviert
+* 5 Bit **↕ Motor** zeigt das aktivierte Motor-Byte (0..128..255) gemapt auf (0..16..31)
+  * zeigt in der Regel den gesendeten Wert vom Joystick (vorwärts / rückwärts) an
+* 5 Bit **↔ Servo/Motor** zeigt das aktivierte Servo-Byte (0..16..31) an
+  * zeigt in der Regel den gesendeten Wert vom Joystick (links / rechts) an
+  * in Joystick Ruhestellung leuchtet nur die obere LED (16)
 
 
 ## Dieses Projekt bearbeiten ![Build status badge](https://github.com/calliope-net/fernsteuerung-s41/workflows/MakeCode/badge.svg)
