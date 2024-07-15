@@ -12,6 +12,7 @@
     * 1.3 Maker Kit Car mit Calliope v3 (Leiterplatte) mit Kran (3 Motoren an I²C)
     * 1.4 CaR 4 (Calliope auf Rädern Version 4)
   * **A+B geklickt** Modell im Flash speichern, wird beim Einschalten ausgewählt
+  * umschalten auf ein festes Modell 1.1, 1.2, 1.3 oder 1.4
   * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
 * 1 jedes Modell kann eine oder mehrere Funktionen haben
@@ -42,8 +43,21 @@
       * startet das Beispiel (z.B. fährt los)
       * wiederholt **B geklickt**
         * beendet das Beispiel
-        * zurück zu 1.1.2 (A wählen, B starten)
+        * zurück zu 1.1.2 (A Beispiel wählen, B starten)
     * **A+B geklickt**
+      * zurück zu 1.1.1 *Fahren und Lenken* mit Joystick
+
+* 1.2 Maker Kit Car mit Calliope v3, optional auch mit Gabelstapler
+  * 1.2.1 *Fahren und Lenken* mit Joystick
+    * **A geklickt** oder **B geklickt**
+      * kann im Block *Knopf A\|B Schalter* abgefragt werden
+      * B schaltet Licht am Modell an/aus
+    * **A+B geklickt**
+      * umschalten auf Funktion *Gabelstapler*
+    * 1.2.2 langsam *Fahren und Gabelstapler* mit Joystick
+    * **A geklickt** oder **B geklickt**
+      * links und rechts lenken (Servo fernsteuern) zum rangieren
+
 
 
 
