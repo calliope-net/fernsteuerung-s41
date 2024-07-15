@@ -24,14 +24,16 @@
 > Bedienung mit den Tasten A und B **geklickt** (kurz drücken und loslassen - nicht 'halten')
 
 * 0 Auswahl des Modells, welches ferngesteuert wird
-  * **A geklickt** oder **B geklickt** Modell umschalten (wird als Bild angezeigt)
+  * **A geklickt** (-) oder **B geklickt** (+)
+    * Modell umschalten (wird als Bild angezeigt):
     * 1.1 Calli:bot 2
     * 1.2 Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
     * 1.3 Maker Kit Car mit Calliope v3 (Leiterplatte) mit Kran (3 Motoren an I²C)
     * 1.4 CaR 4 (Calliope auf Rädern Version 4)
   * **A+B geklickt**
     * geändertes Modell im Flash speichern, wird beim Einschalten wieder hergestellt
-    * zum Starten des Senders (Bluetooth) muss nur einmal **A+B geklickt** werden
+    * nach dem Einschalten muss nur einmal **A+B geklickt** werden
+    * Sender beginnt kontinuierlich über Bluetooth zu senden (aller 400 ms)
     * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
 * jedes Modell kann eine oder mehrere Funktionen haben
