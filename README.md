@@ -24,7 +24,24 @@
     * Block *Knopf A+B Schalter* wechselt zwischen true und false
     * *Funktion* wird auf Standardwert *Fahren und Lenken* eingestellt
 
-
+* 1.1 Calli:bot 2
+  * 1.1.1 *Fahren und Lenken* mit Joystick
+    * **A geklickt** oder **B geklickt**
+      * kann im Block *Knopf A|B Schalter* abgefragt werden
+    * **A+B geklickt**
+      * umschalten auf Funktion *Calli:bot Beispiele*
+  * 1.1.2 *Calli:bot Beispiele*: auf Calli:bot gespeicherters Programm starten
+    * **A geklickt**
+      * beendet ein laufendes Beispiel (z.B. hält an)
+      * zählt die Beispiel Nummer 1 2 3 1 2 3 ...
+      * wird in der 5x5 Matrix rechts binär angezeigt
+        * 1 Spurfolger
+        * 2 ___
+        * 3 ___
+    * **B geklickt**
+      * startet das Beispiel (z.B. fährt los)
+      * wiederholt **B geklickt**
+        * beendet das Beispiel
 
 
 
