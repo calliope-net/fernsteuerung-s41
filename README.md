@@ -44,13 +44,13 @@
     * Block *Knopf A+B Schalter* wechselt zwischen true und false
     * *Funktion* wird auf Standardwert *Fahren und Lenken mit Joystick* eingestellt
 
-* 1 Calli:bot 2
-  * 1.1 *Fahren und Lenken mit Joystick*
+* 1 Modell: Calli:bot 2
+  * 1.1 Calli:bot: *Fahren und Lenken mit Joystick*
     * **A geklickt** oder **B geklickt**
       * kann im Block *Knopf A\|B Schalter* abgefragt werden
     * **A+B geklickt**
       * umschalten auf Funktion *Calli:bot Beispiele*
-  * 1.2 *Calli:bot Beispiele*: auf Calli:bot gespeicherters Programm starten
+  * 1.2 Calli:bot: *Beispiele*: auf Calli:bot gespeicherters Programm starten
     * **A geklickt**
       * beendet ein laufendes Beispiel (z.B. hält an)
       * zählt die Beispiel Nummer 1 2 3 1 2 3 ...
@@ -68,7 +68,7 @@
     * **A+B geklickt**
       * zurück zu 1.1 *Fahren und Lenken mit Joystick*
 
-* 2 Maker Kit Car mit Calliope v3, optional auch mit Gabelstapler
+* 2 Modell: Maker Kit Car mit Calliope v3, optional auch mit Gabelstapler
   * 2.1 *Fahren und Lenken mit Joystick*
     * **A geklickt**
       * kann im Block *Knopf A Schalter* abgefragt werden
@@ -82,7 +82,7 @@
     * **A+B geklickt**
       * zurück zu 2.1 *Fahren und Lenken mit Joystick*
 
-* 3 Maker Kit Car mit Calliope v3, mit Kran (3 Motoren, Elektromagnet an I²C)
+* 3 Modell: Maker Kit Car mit Calliope v3, mit Kran (3 Motoren, Elektromagnet an I²C)
   * 3.1 Kran *Fahren und Lenken mit Joystick*
     * **A geklickt**
       * schaltet Elektromagnet am Kran an/aus
@@ -105,7 +105,8 @@
     * **A+B geklickt**
       * zurück zu 3.1 *Fahren und Lenken mit Joystick*
 
-* 4 CaR 4 (Calliope auf Rädern Version 4)
+* 4 Modell: CaR 4 (Calliope auf Rädern Version 4)
+  * 4.1 CaR 4 *Fahren und Lenken mit Joystick*
 
 
 ## Dieses Projekt bearbeiten ![Build status badge](https://github.com/calliope-net/fernsteuerung-s41/workflows/MakeCode/badge.svg)
