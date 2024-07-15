@@ -27,7 +27,7 @@
 * 1.1 Calli:bot 2
   * 1.1.1 *Fahren und Lenken* mit Joystick
     * **A geklickt** oder **B geklickt**
-      * kann im Block *Knopf A|B Schalter* abgefragt werden
+      * kann im Block *Knopf A\|B Schalter* abgefragt werden
     * **A+B geklickt**
       * umschalten auf Funktion *Calli:bot Beispiele*
   * 1.1.2 *Calli:bot Beispiele*: auf Calli:bot gespeicherters Programm starten
@@ -42,6 +42,8 @@
       * startet das Beispiel (z.B. fährt los)
       * wiederholt **B geklickt**
         * beendet das Beispiel
+        * zurück zu 1.1.2 (A wählen, B starten)
+    * **A+B geklickt**
 
 
 
