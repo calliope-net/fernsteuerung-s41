@@ -34,7 +34,7 @@
   * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
 * jedes Modell kann eine oder mehrere Funktionen haben
-* Standard Funktionen der Tasten, wenn beim Modell nichts anderes angegeben
+* Standard Funktionen der Tasten, wenn beim Modell nichts anderes angegeben ist
   * **A geklickt** 
     * Block *Knopf A Schalter* wechselt zwischen true und false
   * **B geklickt**
