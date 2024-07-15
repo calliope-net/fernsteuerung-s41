@@ -1,6 +1,8 @@
 
 > Diese Seite bei [https://calliope-net.github.io/fernsteuerung-s41/](https://calliope-net.github.io/fernsteuerung-s41/) öffnen
 
+Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** und **halten** genutzt. Die Bedienung wird nachfolgend beschrieben. 
+
 ### Einstellen der Funkgruppe (am Sender und Empfänger)
 
 > Bedienung mit den Tasten A oder B **halten** (drücken und halten bis sich die Anzeige ändert)
