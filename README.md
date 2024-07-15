@@ -3,7 +3,7 @@
 
 ### Einstellen der Funkgruppe (am Sender und Empfänger)
 
-> Bedienung mit den Tasten A und B **halten** (drücken und halten bis sich die Anzeige ändert)
+> Bedienung mit den Tasten A oder B **halten** (drücken und halten bis sich die Anzeige ändert)
 
 * Funkgruppe ändern ist in allen Modellen und Funktionen möglich
 * wird (immer) in der 5x5 Matrix links als 2 HEX Ziffern angezeigt
@@ -12,6 +12,11 @@
 * wird beim Einschalten aus dem Flash wieder hergestellt
 * eine Fernsteuerung kann mehrere Modelle (Calli:bot) mit verschiedenen Funkgruppen steuern
 
+### Empfänger (Calliope im ferngesteuerten Modell) zurücksetzen
+
+> Tasten **A+B halten** sendet *zurücksetzen*, wenn eine Bluetooth Verbinduung besteht
+* Modelle mit Relais schalten aus
+* Calli:bot startet neu
 
 ### Bedienung der Fernsteuerung 'Sender mit Joystick'
 
