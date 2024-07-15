@@ -76,21 +76,21 @@
       * zurück zu 1.2.1 *Fahren und Lenken* mit Joystick
 
 * 1.3 Maker Kit Car mit Calliope v3, mit Kran (3 Motoren, Elektromagnet an I²C)
-  * 1.3.1 *Fahren und Lenken* mit Joystick
+  * 1.3.1 Kran *Fahren und Lenken* mit Joystick
     * **A geklickt**
       * schaltet Elektromagnet am Kran an/aus
     * **B geklickt**
       * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Seilrolle und Drehkranz*
-  * 1.3.2 *Seilrolle und Drehkranz* mit Joystick
+  * 1.3.2 Kran *Seilrolle und Drehkranz* mit Joystick
     * **A geklickt**
       * schaltet Elektromagnet am Kran an/aus
     * **B geklickt**
       * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Zahnstange und Drehkranz*
-  * 1.3.3 *Zahnstange und Drehkranz* mit Joystick
+  * 1.3.3 Kran *Zahnstange und Drehkranz* mit Joystick
     * **A geklickt**
       * schaltet Elektromagnet am Kran an/aus
     * **B geklickt**
