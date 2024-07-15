@@ -16,11 +16,11 @@
 
 * 1 Standard Funktionen der Tasten, wenn nachfolgend nichts anderes angegeben
   * **A geklickt** 
-    * *Knopf A Schalter* wechselt zwischen true und false
+    * Block *Knopf A Schalter* wechselt zwischen true und false
   * **B geklickt**
-    * *Knopf B Schalter* wechselt zwischen true und false
+    * Block *Knopf B Schalter* wechselt zwischen true und false
   * **A+B geklickt**
-    * *Knopf A+B Schalter* wechselt zwischen true und false
+    * Block *Knopf A+B Schalter* wechselt zwischen true und false
     * *Funktion* wird auf Standardwert *Fahren und Lenken* eingestellt
 
 
