@@ -5,7 +5,7 @@
 
 > Bedienung mit den Tasten A und B **geklickt** (kurz drücken und loslassen - nicht 'halten')
 
-* Auswahl des Modells, welches ferngesteuert wird
+* 0 Auswahl des Modells, welches ferngesteuert wird
   * **A geklickt** oder **B geklickt** Modell umschalten (wird als Bild angezeigt)
     * Calli:bot 2
     * Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
@@ -15,13 +15,13 @@
   * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
 * 1 Standard Funktionen der Tasten, wenn nachfolgend nichts anderes angegeben
-* 1 **A geklickt** 
-  * *Knopf A Schalter* wechselt zwischen true und false
-* 1 **B geklickt**
-  * *Knopf B Schalter* wechselt zwischen true und false
-* 1 **A+B geklickt**
-  * *Knopf A+B Schalter* wechselt zwischen true und false
-  * *Funktion* wird auf Standardwert *Fahren und Lenken* eingestellt
+  * **A geklickt** 
+    * *Knopf A Schalter* wechselt zwischen true und false
+  * 1 **B geklickt**
+    * *Knopf B Schalter* wechselt zwischen true und false
+  * 1 **A+B geklickt**
+    * *Knopf A+B Schalter* wechselt zwischen true und false
+    * *Funktion* wird auf Standardwert *Fahren und Lenken* eingestellt
 
 
 
