@@ -57,6 +57,28 @@
   * 1.2.2 langsam *Fahren und Gabelstapler* mit Joystick
     * **A geklickt** oder **B geklickt**
       * links und rechts lenken (Servo fernsteuern) zum rangieren
+    * **A+B geklickt**
+      * zurück zu 1.2.1 *Fahren und Lenken* mit Joystick
+
+* 1.3 Maker Kit Car mit Calliope v3, mit Kran (3 Motoren, Elektromagnet an I²C)
+  * 1.3.1 *Fahren und Lenken* mit Joystick
+    * **A geklickt** oder **B geklickt**
+      * A schaltet Elektromagnet am Kran an/aus
+      * B schaltet Licht am Modell an/aus
+    * **A+B geklickt**
+      * umschalten auf Funktion *Seilrolle und Drehkranz*
+  * 1.3.2 *Seilrolle und Drehkranz* mit Joystick
+    * **A geklickt** oder **B geklickt**
+      * A schaltet Elektromagnet am Kran an/aus
+      * B schaltet Licht am Modell an/aus
+    * **A+B geklickt**
+      * umschalten auf Funktion *Zahnstange und Drehkranz*
+  * 1.3.3 *Zahnstange und Drehkranz* mit Joystick
+    * **A geklickt** oder **B geklickt**
+      * A schaltet Elektromagnet am Kran an/aus
+      * B schaltet Licht am Modell an/aus
+    * **A+B geklickt**
+      * zurück zu 1.3.1 *Fahren und Lenken* mit Joystick
 
 
 
