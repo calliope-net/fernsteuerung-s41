@@ -120,19 +120,17 @@
 
 y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 ---|---|---|---|---
-b5|b4|M1|16|16
-x80|x08|MA|8|8
-x40|x04|MB|4|4
-x20|x02|MC|2|2
-x10|x01|MD|1|1
+<code>b5</code>|<code>b4</code>|M1|16|16
+<code>x80</code>|<code>x08</code>|MA|8|8
+<code>x40</code>|<code>x04</code>|MB|4|4
+<code>x20</code>|<code>x02</code>|MC|2|2
+<code>x10</code>|<code>x01</code>|MD|1|1
 
-> 8 LEDs (x..) zeigen als 2 HEX Ziffern die Funkgruppe an: 0xA0 bis 0xBF
-
-* Funkgruppe kann mit Tasten **A halten** oder **B halten** jederzeit geändert werden und wird im Flash gespeichert
+* 8 LEDs <code>x80</code> bis <code>x01</code> zeigen als 2 HEX Ziffern die Funkgruppe an: 0xA0 bis 0xBF
 
 > alle anderen LEDs zeigen Daten aus dem Datenpaket (19 Byte Buffer *sendData* oder *receivedData*)
 
-* 2 Bit Betriebsart (b5 b4) aus Steuer Byte 0 <code>..xx....</code>
+* 2 Bit Betriebsart <code>b5 b4</code> aus Steuer Byte 0 <code>..xx....</code>
 
 hex|bit|Funktion|bei Ereignis von einem Sensor
 ---|---|---|---
