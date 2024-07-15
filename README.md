@@ -3,7 +3,7 @@
 
 ### Einstellen der Funkgruppe (am Sender und Empfänger)
 
-> Bedienung mit den Tasten A und B **halten** (so lange drücken und nicht loslassen, bis sich die Anzeige ändert)
+> Bedienung mit den Tasten A und B **halten** (drücken und halten bis sich die Anzeige ändert)
 
 * Funkgruppe ändern ist in allen Modellen und Funktionen möglich
 * wird (immer) in der 5x5 Matrix links als 2 HEX Ziffern angezeigt
