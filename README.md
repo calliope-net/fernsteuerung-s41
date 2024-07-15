@@ -1,14 +1,19 @@
 
 > Diese Seite bei [https://calliope-net.github.io/fernsteuerung-s41/](https://calliope-net.github.io/fernsteuerung-s41/) öffnen
 
-## Als Erweiterung verwenden
+### Bedienung der Fernsteuerung 'Sender mit Joystick'
 
-Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
+> Bedienung mit den Tasten A und B **geklickt**
 
-* öffne [https://makecode.calliope.cc/](https://makecode.calliope.cc/)
-* klicke auf **Neues Projekt**
-* klicke auf **Erweiterungen** unter dem Zahnrad-Menü
-* nach **https://github.com/calliope-net/fernsteuerung-s41** suchen und importieren
+* 0 Auswahl des Modells, welches ferngesteuert wird
+  * 0.1 Calli:bot 2
+  * 0.2 Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
+  * 0.3 Maker Kit Car mit Calliope v3 (Leiterplatte) mit Kran (3 Motoren an I²C)
+  * 0.4 CaR 4 (Calliope auf Rädern Version 4)
+* 0 **A geklickt** und **B geklickt** Modell umschalten (Bilder werden angezeigt)
+* 0 **A+B geklickt** Modell im Flash speichern, wird beim Einschalten ausgewählt
+
+
 
 ## Dieses Projekt bearbeiten ![Build status badge](https://github.com/calliope-net/fernsteuerung-s41/workflows/MakeCode/badge.svg)
 
