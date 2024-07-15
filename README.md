@@ -6,21 +6,21 @@
 > Bedienung mit den Tasten A und B **geklickt** (kurz drücken und loslassen - nicht 'halten')
 
 * Auswahl des Modells, welches ferngesteuert wird
-  * **A geklickt** und **B geklickt** Modell umschalten (wird als Bild angezeigt)
-    * 0.1 Calli:bot 2
-    * 0.2 Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
-    * 0.3 Maker Kit Car mit Calliope v3 (Leiterplatte) mit Kran (3 Motoren an I²C)
-    * 0.4 CaR 4 (Calliope auf Rädern Version 4)
+  * **A geklickt** oder **B geklickt** Modell umschalten (wird als Bild angezeigt)
+    * Calli:bot 2
+    * Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
+    * Maker Kit Car mit Calliope v3 (Leiterplatte) mit Kran (3 Motoren an I²C)
+    * CaR 4 (Calliope auf Rädern Version 4)
   * **A+B geklickt** Modell im Flash speichern, wird beim Einschalten ausgewählt
-  * in die Menüebene 0 zurück ist nur mit Reset möglich
+  * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
 * 1 Standard Funktionen der Tasten, wenn nachfolgend nichts anderes angegeben
 * 1 **A geklickt** 
-  * 'Knopf A Schalter' wechselt zwischen true und false
+  * *Knopf A Schalter* wechselt zwischen true und false
 * 1 **B geklickt**
-  * 'Knopf B Schalter' wechselt zwischen true und false
+  * *Knopf B Schalter* wechselt zwischen true und false
 * 1 **A+B geklickt**
-  * 'Knopf A+B Schalter' wechselt zwischen true und false
+  * *Knopf A+B Schalter* wechselt zwischen true und false
   * *Funktion* wird auf Standardwert *Fahren und Lenken* eingestellt
 
 
