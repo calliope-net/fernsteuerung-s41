@@ -1,6 +1,18 @@
 
 > Diese Seite bei [https://calliope-net.github.io/fernsteuerung-s41/](https://calliope-net.github.io/fernsteuerung-s41/) öffnen
 
+### Einstellen der Funkgruppe (am Sender und Empfänger)
+
+> Bedienung mit den Tasten A und B **halten** (so lange drücken und nicht loslassen, bis sich die Anzeige ändert)
+
+* Funkgruppe ändern ist in allen Modellen und Funktionen möglich
+* wird (immer) in der 5x5 Matrix links als 2 HEX Ziffern angezeigt
+* kann Werte von 0xA0 = 160 bis 0xBF = 191 annehmen
+* geänderte Funkgruppe wird sofort aktiviert und im Flash gespeichert
+* wird beim Einschalten aus dem Flash wieder hergestellt
+* eine Fernsteuerung kann mehrere Modelle (Calli:bot) mit verschiedenen Funkgruppen steuern
+
+
 ### Bedienung der Fernsteuerung 'Sender mit Joystick'
 
 > Bedienung mit den Tasten A und B **geklickt** (kurz drücken und loslassen - nicht 'halten')
@@ -41,6 +53,8 @@
         * 3 ___
     * **B geklickt**
       * startet das Beispiel (z.B. fährt los)
+        * fährt ab jetzt auch ohne Bluetooth Verbindung
+        * Sender kann Funkgruppe ändern und anderes Modell fernsteuern
       * wiederholt **B geklickt**
         * beendet das Beispiel
         * zurück zu 1.1.2 (A Beispiel wählen, B starten)
@@ -49,9 +63,10 @@
 
 * 1.2 Maker Kit Car mit Calliope v3, optional auch mit Gabelstapler
   * 1.2.1 *Fahren und Lenken* mit Joystick
-    * **A geklickt** oder **B geklickt**
-      * kann im Block *Knopf A\|B Schalter* abgefragt werden
-      * B schaltet Licht am Modell an/aus
+    * **A geklickt**
+      * kann im Block *Knopf A Schalter* abgefragt werden
+    * **B geklickt**
+      * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Gabelstapler*
   * 1.2.2 langsam *Fahren und Gabelstapler* mit Joystick
@@ -62,25 +77,28 @@
 
 * 1.3 Maker Kit Car mit Calliope v3, mit Kran (3 Motoren, Elektromagnet an I²C)
   * 1.3.1 *Fahren und Lenken* mit Joystick
-    * **A geklickt** oder **B geklickt**
-      * A schaltet Elektromagnet am Kran an/aus
-      * B schaltet Licht am Modell an/aus
+    * **A geklickt**
+      * schaltet Elektromagnet am Kran an/aus
+    * **B geklickt**
+      * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Seilrolle und Drehkranz*
   * 1.3.2 *Seilrolle und Drehkranz* mit Joystick
-    * **A geklickt** oder **B geklickt**
-      * A schaltet Elektromagnet am Kran an/aus
-      * B schaltet Licht am Modell an/aus
+    * **A geklickt**
+      * schaltet Elektromagnet am Kran an/aus
+    * **B geklickt**
+      * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * umschalten auf Funktion *Zahnstange und Drehkranz*
   * 1.3.3 *Zahnstange und Drehkranz* mit Joystick
-    * **A geklickt** oder **B geklickt**
-      * A schaltet Elektromagnet am Kran an/aus
-      * B schaltet Licht am Modell an/aus
+    * **A geklickt**
+      * schaltet Elektromagnet am Kran an/aus
+    * **B geklickt**
+      * schaltet Licht am Modell an/aus
     * **A+B geklickt**
       * zurück zu 1.3.1 *Fahren und Lenken* mit Joystick
 
-
+1.4 CaR 4 (Calliope auf Rädern Version 4)
 
 
 ## Dieses Projekt bearbeiten ![Build status badge](https://github.com/calliope-net/fernsteuerung-s41/workflows/MakeCode/badge.svg)
