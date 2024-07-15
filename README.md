@@ -14,7 +14,8 @@
   * **A+B geklickt** Modell im Flash speichern, wird beim Einschalten ausgewählt
   * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
 
-* 1 Standard Funktionen der Tasten, wenn nachfolgend nichts anderes angegeben
+* 1 jedes Modell kann eine oder mehrere Funktionen haben
+* Standard Funktionen der Tasten, wenn nachfolgend nichts anderes angegeben
   * **A geklickt** 
     * Block *Knopf A Schalter* wechselt zwischen true und false
   * **B geklickt**
