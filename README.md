@@ -17,9 +17,9 @@
 * 1 Standard Funktionen der Tasten, wenn nachfolgend nichts anderes angegeben
   * **A geklickt** 
     * *Knopf A Schalter* wechselt zwischen true und false
-  * 1 **B geklickt**
+  * **B geklickt**
     * *Knopf B Schalter* wechselt zwischen true und false
-  * 1 **A+B geklickt**
+  * **A+B geklickt**
     * *Knopf A+B Schalter* wechselt zwischen true und false
     * *Funktion* wird auf Standardwert *Fahren und Lenken* eingestellt
 
