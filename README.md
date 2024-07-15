@@ -58,6 +58,10 @@
       * zählt die Beispiel Nummer 1 2 3 1 2 3 ...
       * wird in der 5x5 Matrix rechts binär angezeigt
         * 1 Spurfolger
+          * fährt geradeaus bis zu einer schwarzen Linie
+          * folgt dann dieser Linie, hält bei Hindernissen an und fährt weiter
+          * so können mehrere Calli:bot hintereinander fahren, ohne aneinander zu stoßen
+          * Fernsteuerung mit Joystick kann jederzeit wieder übernommen werden
         * 2 ___
         * 3 ___
     * **B geklickt**
