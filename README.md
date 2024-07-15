@@ -142,13 +142,14 @@ hex|bit|Funktion|bei Ereignis von einem Sensor
 0x30|<code>..11....</code>|Programm Sensoren|wechselt zum Ereignis-Block
 
 * 5 Bit aktivierte Motoren (M1 MA MB MC MD) aus Steuer-Byte 3 <code>..xxxxxx</code>
-  * jedes Bit aktiviert die entsprechenden 3 Byte (Motor, Servo, Strecke) im Buffer
+  * zeigt in der Regel an, an welchen Motor die Daten vom Joystick gesendet werden
   * M0 wird nicht angezeigt (Platzmangel), ist in der Regel aktiv, wenn alle 5 LEDs aus sind
-  * je nach Betriebsart werden Motoren, Fahrstrecken oder Sensor-Ereignisse aktiviert
-* 5 Bit **↕ Motor** zeigt das aktivierte Motor-Byte (0..128..255) gemapt auf (0..16..31)
+* 5 Bit **↕ Motor** zeigt binär das aktivierte Motor-Byte (0..128..255) gemapt auf (0..16..31)
   * zeigt in der Regel den gesendeten Wert vom Joystick (vorwärts / rückwärts) an
-* 5 Bit **↔ Servo/Motor** zeigt das aktivierte Servo-Byte (0..16..31) an
+  * in Joystick Ruhestellung leuchtet nur die obere LED (16)
+* 5 Bit **↔ Servo/Motor** zeigt binär das aktivierte Servo-Byte (0..16..31) an
   * zeigt in der Regel den gesendeten Wert vom Joystick (links / rechts) an
+  * kann für den Servo (bzw. die Lenkung) oder einen 2. Motor gelten
   * in Joystick Ruhestellung leuchtet nur die obere LED (16)
 
 
