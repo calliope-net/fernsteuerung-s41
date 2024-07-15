@@ -14,7 +14,8 @@
 
 ### Empfänger (Calliope im ferngesteuerten Modell) zurücksetzen
 
-> Tasten **A+B halten** sendet *zurücksetzen*, wenn eine Bluetooth Verbinduung besteht
+> am Sender Tasten **A+B halten**, wenn eine Bluetooth Verbinduung besteht
+
 * Modelle mit Relais schalten aus
 * Calli:bot startet neu
 
