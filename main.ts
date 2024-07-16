@@ -2,24 +2,21 @@ function modell_Callibot () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
         sender.sendM0(btf.btf_sendBuffer19())
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
-        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6, true)
+        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, true)
+        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, true)
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1)
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, true)
         btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         if (sender.getButtonAB_Counter() == 1) {
             btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u1)
-            btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6, true)
-        } else if (sender.getButtonAB_Counter() == 2) {
-            btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u1)
-            btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6, true)
-            btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b0_Motor, btf.speedPicker(89))
-            btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b0_Motor, btf.speedPicker(73))
+            btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, true)
         }
         btf.comment(btf.btf_text("aktiviert dauerhaft"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
+    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
 }
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
