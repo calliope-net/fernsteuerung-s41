@@ -2,15 +2,15 @@ function modell_Callibot () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
         sender.sendM0(btf.btf_sendBuffer19())
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
-        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, true)
-        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, true)
+        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
+        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1)
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, true)
         btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         if (sender.getButtonAB_Counter() == 1) {
             btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u1)
-            btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, true)
+            btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, true)
         }
         btf.comment(btf.btf_text("aktiviert dauerhaft"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
