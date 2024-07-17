@@ -18,23 +18,20 @@ function modell_Callibot () {
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
 }
+input.onButtonEvent(Button.AB, btf.buttonEventValue(ButtonEvent.Hold), function () {
+    sender.setSendReset(true)
+})
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     sender.buttonAB()
 })
-input.onButtonEvent(Button.B, sender.buttonEventValue(ButtonEvent.Hold), function () {
-    btf.setFunkgruppeButton(btf.eFunkgruppeButton.plus)
-})
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     sender.buttonB()
 })
-input.onButtonEvent(Button.AB, sender.buttonEventValue(ButtonEvent.Hold), function () {
-    sender.setSendReset(true)
-})
-input.onButtonEvent(Button.A, sender.buttonEventValue(ButtonEvent.Hold), function () {
-    btf.setFunkgruppeButton(btf.eFunkgruppeButton.minus)
+input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
+    btf.setFunkgruppeButton(btf.eFunkgruppeButton.plus)
 })
 function modell_MKC () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
@@ -51,6 +48,9 @@ function modell_MKC () {
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b3, sender.getButtonAB_Switch(sender.eButtonAB_Switch.AB))
 }
+input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
+    btf.setFunkgruppeButton(btf.eFunkgruppeButton.minus)
+})
 sender.beimStart()
 loops.everyInterval(400, function () {
     if (sender.isFunktion(sender.eFunktion.ng) && sender.joystickQwiic()) {
