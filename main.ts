@@ -1,11 +1,11 @@
 function modell_Callibot () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
-        sender.sendM0(btf.btf_sendBuffer19())
+        sender.send00M0(btf.btf_sendBuffer19())
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
-        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1)
+        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1Lokal)
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, true)
         btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         if (sender.getButtonAB_Counter() == 1) {
@@ -34,13 +34,13 @@ input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function (
 })
 function modell_MKC () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
-        sender.sendM0(btf.btf_sendBuffer19())
+        sender.send00M0(btf.btf_sendBuffer19())
     } else if (sender.isFunktion(sender.eFunktion.m0_m1_s0)) {
-        sender.sendM01(btf.btf_sendBuffer19())
+        sender.send00M01(btf.btf_sendBuffer19())
     } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
-        sender.sendMAB(btf.btf_sendBuffer19())
+        sender.send00MAB(btf.btf_sendBuffer19())
     } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
-        sender.sendMCB(btf.btf_sendBuffer19())
+        sender.send00MCB(btf.btf_sendBuffer19())
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
