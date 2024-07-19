@@ -6,12 +6,14 @@ function modell_Callibot () {
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1Lokal)
+        btf.comment(btf.btf_text("MD 5x5 Display"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, true)
         btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
         if (sender.getButtonAB_Counter() == 1) {
-            spurfolger()
+        	
         }
-        btf.comment(btf.btf_text("aktiviert dauerhaft"))
+        spurfolger()
+        btf.comment(btf.btf_text("MC dauerhaft Schleife"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
@@ -52,7 +54,7 @@ function spurfolger () {
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b0_Motor, 160)
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b1_Servo, 31)
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b2_Fahrstrecke, 0)
-    btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, true)
+    btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
     btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
