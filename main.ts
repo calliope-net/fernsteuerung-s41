@@ -41,7 +41,6 @@ function modell_MKC () {
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
-    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b3, sender.getButtonAB_Switch(sender.eButtonAB_Switch.AB))
 }
 function spurfolger () {
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b0_Motor, 192)
