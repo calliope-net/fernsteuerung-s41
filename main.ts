@@ -6,12 +6,6 @@ function modell_Callibot () {
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1Lokal)
-        btf.comment(btf.btf_text("MD 5x5 Display"))
-        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, true)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b1_Servo, sender.getButtonAB_Counter())
-        if (sender.getButtonAB_Counter() == 1) {
-        	
-        }
         spurfolger()
         btf.comment(btf.btf_text("MC dauerhaft Schleife"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
