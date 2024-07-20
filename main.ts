@@ -18,7 +18,6 @@ function modell_Callibot () {
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
-    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
 }
 input.onButtonEvent(Button.AB, btf.buttonEventValue(ButtonEvent.Hold), function () {
     sender.setSendReset(true)
