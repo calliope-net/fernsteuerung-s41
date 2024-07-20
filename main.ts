@@ -37,10 +37,8 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     sender.buttonB()
 })
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
-    if (!(input.buttonIsPressed(Button.A))) {
-        sender.resetFunktion()
-        btf.setFunkgruppeButton(btf.eFunkgruppeButton.plus)
-    }
+    btf.buttonBhold()
+    sender.resetFunktion()
 })
 function modell_MKC () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
@@ -70,10 +68,8 @@ function modell_MKC () {
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
-    if (!(input.buttonIsPressed(Button.B))) {
-        sender.resetFunktion()
-        btf.setFunkgruppeButton(btf.eFunkgruppeButton.minus)
-    }
+    btf.buttonAhold()
+    sender.resetFunktion()
 })
 sender.beimStart()
 loops.everyInterval(400, function () {
