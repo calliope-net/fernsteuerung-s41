@@ -26,7 +26,10 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     sender.buttonB()
 })
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
-    btf.setFunkgruppeButton(btf.eFunkgruppeButton.plus)
+    if (!(input.buttonIsPressed(Button.A))) {
+        sender.resetFunktion()
+        btf.setFunkgruppeButton(btf.eFunkgruppeButton.plus)
+    }
 })
 function modell_MKC () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
@@ -51,7 +54,10 @@ function spurfolger () {
     btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
-    btf.setFunkgruppeButton(btf.eFunkgruppeButton.minus)
+    if (!(input.buttonIsPressed(Button.B))) {
+        sender.resetFunktion()
+        btf.setFunkgruppeButton(btf.eFunkgruppeButton.minus)
+    }
 })
 sender.beimStart()
 loops.everyInterval(400, function () {
@@ -68,5 +74,7 @@ loops.everyInterval(400, function () {
         btf.zeige5x5Buffer(btf.btf_sendBuffer19())
         btf.zeige5x5Joystick(btf.btf_sendBuffer19())
         basic.turnRgbLedOff()
+    } else if (!(btf.simulator())) {
+        btf.sendData(btf.createBuffer(4))
     }
 })
