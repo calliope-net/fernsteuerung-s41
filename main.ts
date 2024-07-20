@@ -5,8 +5,15 @@ function modell_Callibot () {
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
-        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1Lokal)
-        spurfolger()
+        sender.send10Spurfolger(
+        btf.btf_sendBuffer19(),
+        192,
+        160,
+        31,
+        0,
+        sender.getButtonAB_Switch(sender.eButtonAB_Switch.A),
+        btf.e3Abstand.u2
+        )
         btf.comment(btf.btf_text("MC dauerhaft Schleife"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     }
@@ -46,11 +53,12 @@ function modell_MKC () {
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
 }
 function spurfolger () {
+    btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1Lokal)
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b0_Motor, 192)
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b0_Motor, 160)
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b1_Servo, 31)
     btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b2_Fahrstrecke, 0)
-    btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
+    btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, false)
     btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
@@ -63,11 +71,13 @@ sender.beimStart()
 loops.everyInterval(400, function () {
     if (sender.isFunktion(sender.eFunktion.ng) && sender.joystickQwiic()) {
         basic.setLedColor(0x007fff)
-        btf.comment(sender.multiswitchGrove())
         btf.fill_sendBuffer19()
         if (sender.isModell(sender.eModell.cb2e)) {
             modell_Callibot()
-        } else if (sender.isModell(sender.eModell.mkcg) || sender.isModell(sender.eModell.mkck)) {
+        } else if (sender.isModell(sender.eModell.mkcg)) {
+            modell_MKC()
+        } else if (sender.isModell(sender.eModell.mkck)) {
+            btf.comment(sender.multiswitchGrove(true))
             modell_MKC()
         }
         btf.sendData(btf.btf_sendBuffer19())
