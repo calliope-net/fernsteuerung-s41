@@ -16,6 +16,7 @@ function modell_Callibot () {
         )
         btf.comment(btf.btf_text("MC dauerhaft Schleife"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
 }
