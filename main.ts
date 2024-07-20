@@ -1,8 +1,12 @@
 function modell_Callibot () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
-        sender.send00M0(btf.btf_sendBuffer19())
-        btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
-        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b6Abstand, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
+        sender.send00M0Joystick(
+        btf.btf_sendBuffer19(),
+        sender.sender_xmotor(),
+        sender.sender_servo16(),
+        sender.sender_ButtonA_Switch(),
+        btf.e3Abstand.u2
+        )
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         sender.send10Spurfolger(
@@ -40,26 +44,30 @@ input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function (
 })
 function modell_MKC () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
-        sender.send00M0(btf.btf_sendBuffer19())
+        sender.send00M0Joystick(
+        btf.btf_sendBuffer19(),
+        sender.sender_xmotor(),
+        sender.sender_servo16(),
+        sender.sender_ButtonA_Switch(),
+        btf.e3Abstand.u2
+        )
     } else if (sender.isFunktion(sender.eFunktion.m0_m1_s0)) {
-        sender.send00M01(btf.btf_sendBuffer19())
+        sender.send00M01Gabelstapler(
+        btf.btf_sendBuffer19(),
+        sender.sender_xmotor(),
+        sender.sender_ButtonAB_Counter(),
+        sender.sender_ymotor(),
+        sender.sender_ButtonA_Switch(),
+        btf.e3Abstand.u2
+        )
     } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
-        sender.send00MAB(btf.btf_sendBuffer19())
+        sender.send00MABKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
     } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
-        sender.send00MCB(btf.btf_sendBuffer19())
+        sender.send00MCBKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
-}
-function spurfolger () {
-    btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p1Lokal)
-    btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b0_Motor, 192)
-    btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b0_Motor, 160)
-    btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b1_Servo, 31)
-    btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b2_Fahrstrecke, 0)
-    btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, false)
-    btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u3)
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
     if (!(input.buttonIsPressed(Button.B))) {
