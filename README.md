@@ -52,20 +52,21 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
 * 1 Modell: Calli:bot 2
   * 1.1 Calli:bot: *Fahren und Lenken mit Joystick*
     * **A geklickt**
-      * schaltet Ultraschall Sensor an und aus (fährt bei Hindernis nicht mehr vorwärts)
+      * schaltet Ultraschall Sensor an und aus (fährt bei Hindernis nicht vorwärts)
     * **B geklickt**
-      * schaltet Spursensor an und aus (hält auf schwarzer Linie an)
+      * schaltet Spursensor an und aus (fährt auf schwarzer Linie nicht weiter)
     * **A+B geklickt**
       * umschalten auf Funktion Calli:bot: *Programm fernstarten*
+      * schaltet Ultraschall Sensor an und Spursensor aus
   * 1.2 Calli:bot: *Programm fernstarten*:
-    * auf Calli:bot gespeicherters **Programm fernstarten**
+    * auf Calli:bot gespeicherters *Programm fernstarten*
       * Programm wird mit den Parametern vom Sender einmal gestartet
       * fährt ohne Bluetooth Verbindung vom Sender autonom weiter
       * Sender (Fernbedienung) kann die Funkgruppe ändern und andere Modelle fernsteuern
       * Fernsteuerung kann jederzeit wieder übernommen werden
     * zur Zeit gibt es nur ein Programm: Spurfolger
     * **A geklickt**
-      * schaltet Ultraschall Sensor an und aus (fährt bei Hindernis nicht mehr vorwärts)
+      * schaltet Ultraschall Sensor an und aus (fährt bei Hindernis nicht vorwärts)
     * **B geklickt**
       * Start und Stop: auf Calli:bot gespeicherters Programm Spurfolger
       * 1 Spurfolger
@@ -73,13 +74,6 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
         * folgt dann dieser Linie, hält bei Hindernissen an und fährt weiter
         * so können mehrere Calli:bot hintereinander fahren, ohne aneinander zu stoßen
         * Fernsteuerung mit Joystick kann jederzeit wieder übernommen werden
-    * **B geklickt**
-      * startet das Beispiel (z.B. fährt los)
-        * fährt ab jetzt auch ohne Bluetooth Verbindung
-        * Sender kann Funkgruppe ändern und anderes Modell fernsteuern
-      * wiederholt **B geklickt**
-        * beendet das Beispiel
-        * zurück zu 1.2 (A Beispiel wählen, B starten)
     * **A+B geklickt**
       * zurück zu 1.1 *Fahren und Lenken mit Joystick*
 
