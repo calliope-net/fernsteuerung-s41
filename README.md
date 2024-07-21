@@ -73,7 +73,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
     * auf Calli:bot gespeicherters *Programm fernstarten*
       * Programm wird mit den Parametern vom Sender einmal gestartet
       * fährt ohne Bluetooth Verbindung vom Sender autonom weiter
-      * Sender (Fernbedienung) kann die Funkgruppe ändern und andere Modelle fernsteuern
+      * Sender kann die Funkgruppe ändern und andere Modelle fernsteuern
       * Fernsteuerung kann jederzeit wieder übernommen werden
     * zur Zeit gibt es nur ein Programm: Spurfolger
     * **A geklickt**
