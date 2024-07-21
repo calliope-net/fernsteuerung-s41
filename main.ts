@@ -30,7 +30,7 @@ function modell_Callibot () {
         sender.sender_programmSchritt(192, 1, 150),
         sender.sender_programmSchritt(1, 16, 20)
         )
-        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.f3, sender.sender_ButtonB_Switch())
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.m1, sender.sender_ButtonB_Switch())
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
 }
