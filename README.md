@@ -45,27 +45,34 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
   * **B geklickt**
     * Block *Knopf B Schalter* wechselt zwischen true und false
   * **A+B geklickt**
-    * Block *Knopf A+B Schalter* wechselt zwischen true und false
+    * Block *Knopf A Schalter* = false
+    * Block *Knopf B Schalter* = false
     * *Funktion* wird auf Standardwert *Fahren und Lenken mit Joystick* eingestellt
 
 * 1 Modell: Calli:bot 2
   * 1.1 Calli:bot: *Fahren und Lenken mit Joystick*
-    * **A geklickt** oder **B geklickt**
-      * kann im Block *Knopf A\|B Schalter* abgefragt werden
-    * **A+B geklickt**
-      * umschalten auf Funktion *Calli:bot Beispiele*
-  * 1.2 Calli:bot: *Beispiele*: auf Calli:bot gespeicherters Programm starten
     * **A geklickt**
-      * beendet ein laufendes Beispiel (z.B. hält an)
-      * zählt die Beispiel Nummer 1 2 3 1 2 3 ...
-      * wird in der 5x5 Matrix rechts binär angezeigt
-        * 1 Spurfolger
-          * fährt geradeaus bis zu einer schwarzen Linie
-          * folgt dann dieser Linie, hält bei Hindernissen an und fährt weiter
-          * so können mehrere Calli:bot hintereinander fahren, ohne aneinander zu stoßen
-          * Fernsteuerung mit Joystick kann jederzeit wieder übernommen werden
-        * 2 ___
-        * 3 ___
+      * schaltet Ultraschall Sensor an und aus (fährt bei Hindernis nicht mehr vorwärts)
+    * **B geklickt**
+      * schaltet Spursensor an und aus (hält auf schwarzer Linie an)
+    * **A+B geklickt**
+      * umschalten auf Funktion Calli:bot: *Programm fernstarten*
+  * 1.2 Calli:bot: *Programm fernstarten*:
+    * auf Calli:bot gespeicherters **Programm fernstarten**
+      * Programm wird mit den Parametern vom Sender einmal gestartet
+      * fährt ohne Bluetooth Verbindung vom Sender autonom weiter
+      * Sender (Fernbedienung) kann die Funkgruppe ändern und andere Modelle fernsteuern
+      * Fernsteuerung kann jederzeit wieder übernommen werden
+    * zur Zeit gibt es nur ein Programm: Spurfolger
+    * **A geklickt**
+      * schaltet Ultraschall Sensor an und aus (fährt bei Hindernis nicht mehr vorwärts)
+    * **B geklickt**
+      * Start und Stop: auf Calli:bot gespeicherters Programm Spurfolger
+      * 1 Spurfolger
+        * fährt geradeaus bis zu einer schwarzen Linie
+        * folgt dann dieser Linie, hält bei Hindernissen an und fährt weiter
+        * so können mehrere Calli:bot hintereinander fahren, ohne aneinander zu stoßen
+        * Fernsteuerung mit Joystick kann jederzeit wieder übernommen werden
     * **B geklickt**
       * startet das Beispiel (z.B. fährt los)
         * fährt ab jetzt auch ohne Bluetooth Verbindung
