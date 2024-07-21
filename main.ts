@@ -7,7 +7,7 @@ function modell_Callibot () {
         sender.sender_ButtonA_Switch(),
         btf.e3Abstand.u2
         )
-        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
+        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.sender_ButtonB_Switch())
     } else if (sender.isFunktion(sender.eFunktion.mc_md_callibot_beispiele)) {
         sender.send10Spurfolger(
         btf.btf_sendBuffer19(),
@@ -38,7 +38,6 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 })
 input.onButtonEvent(Button.B, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.buttonBhold()
-    sender.resetFunktion()
 })
 function modell_MKC () {
     if (sender.isFunktion(sender.eFunktion.m0_s0)) {
@@ -64,12 +63,11 @@ function modell_MKC () {
         sender.send00MCBKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
-    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.getButtonAB_Switch(sender.eButtonAB_Switch.A))
-    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.getButtonAB_Switch(sender.eButtonAB_Switch.B))
+    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.sender_ButtonA_Switch())
+    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.sender_ButtonB_Switch())
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.buttonAhold()
-    sender.resetFunktion()
 })
 sender.beimStart()
 loops.everyInterval(400, function () {
