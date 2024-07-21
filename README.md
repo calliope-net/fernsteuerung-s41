@@ -5,7 +5,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
 
 ### Ändern der Funkgruppe (am Sender und Empfänger)
 
-> Bedienung mit den Tasten A oder B **halten** (drücken und halten bis sich die Anzeige ändert)
+> Bedienung mit den Tasten A oder B **halten** (etwa 4 Sekunden nicht loslassen)
 
 * **A halten** (gedrückt halten bis sich die Funkgruppe in der Anzeige geändert hat)
   * Funkgruppe -1
