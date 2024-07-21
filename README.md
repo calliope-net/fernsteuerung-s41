@@ -36,7 +36,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
     * geändertes Modell im Flash speichern, wird beim Einschalten wieder hergestellt
     * nach dem Einschalten muss nur einmal **A+B geklickt** werden
     * Sender beginnt kontinuierlich über Bluetooth zu senden (aller 400 ms)
-    * in die Menüebene 0 zurück schalten ist nur mit Reset möglich
+    * zurück zu *0 Auswahl des Modells* beim Ändern der Funkgruppe oder Reset
 
 * jedes Modell kann eine oder mehrere Funktionen haben
 * Standard Funktionen der Tasten, wenn beim Modell nichts anderes angegeben ist
