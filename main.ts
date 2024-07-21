@@ -21,6 +21,15 @@ function modell_Callibot () {
         btf.comment(btf.btf_text("MC dauerhaft Schleife"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.sender_ButtonB_Switch())
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, sender.sender_ButtonB_Switch())
+    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
+        sender.send20Strecken(
+        btf.btf_sendBuffer19(),
+        sender.sender_programmSchritt(192, 31, 40),
+        sender.sender_programmSchritt(64, 31, 40),
+        sender.sender_programmSchritt(255, 16, 20),
+        sender.sender_programmSchritt(192, 1, 150),
+        sender.sender_programmSchritt(1, 16, 20)
+        )
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
 }
