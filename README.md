@@ -17,7 +17,6 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
 * geänderte Funkgruppe wird sofort aktiviert und im Flash gespeichert
 * wird beim Einschalten aus dem Flash wieder hergestellt
 * eine Fernsteuerung kann mehrere Modelle mit verschiedenen Funkgruppen steuern
-
 * nach dem Ändern der Funkgruppe
   * Funktion (Sender) wird auf *nicht gestartet* gestellt, wie nach Reset
   * Empfänger mit der gleichen Funkgruppe blinkt grün, reagiert aber nicht
