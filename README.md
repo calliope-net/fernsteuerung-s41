@@ -26,7 +26,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
 
 ### Empfänger (Calliope im ferngesteuerten Modell) zurücksetzen
 
-> am Sender Tasten **A+B halten**, wenn eine Bluetooth Verbinduung besteht
+> am Sender Tasten **A+B halten**, wenn eine Bluetooth Verbindung besteht
 
 * Modelle mit Relais schalten aus
 * Calli:bot startet neu
@@ -37,6 +37,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
 
 * 0 Auswahl des Modells, welches ferngesteuert wird
   * **A geklickt** (-) oder **B geklickt** (+)
+    * ist nur unmittelbar nach Reset möglich
     * Modell umschalten (wird als Bild angezeigt):
     * 1.1 Calli:bot 2
     * 1.2 Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
@@ -46,7 +47,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
     * geändertes Modell im Flash speichern, wird beim Einschalten wieder hergestellt
     * nach dem Einschalten muss nur einmal **A+B geklickt** werden
     * Sender beginnt kontinuierlich über Bluetooth zu senden (aller 400 ms)
-    * zurück zu *0 Auswahl des Modells* beim Ändern der Funkgruppe oder Reset
+    * zurück zu *0 Auswahl des Modells* nur mit Reset
 
 * jedes Modell kann eine oder mehrere Funktionen haben
 * Standard Funktionen der Tasten, wenn beim Modell nichts anderes angegeben ist
