@@ -3,16 +3,27 @@
 
 Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** und **halten** genutzt. Die Bedienung wird nachfolgend beschrieben. 
 
-### Einstellen der Funkgruppe (am Sender und Empfänger)
+### Ändern der Funkgruppe (am Sender und Empfänger)
 
 > Bedienung mit den Tasten A oder B **halten** (drücken und halten bis sich die Anzeige ändert)
 
+* **A halten** (gedrückt halten bis sich die Funkgruppe in der Anzeige geändert hat)
+  * Funkgruppe -1
+* **B halten** (gedrückt halten bis sich die Funkgruppe in der Anzeige geändert hat)
+  * Funkgruppe +1
 * Funkgruppe ändern ist in allen Modellen und Funktionen möglich
 * wird (immer) in der 5x5 Matrix links als 2 HEX Ziffern angezeigt
 * kann Werte von 0xA0 = 160 bis 0xBF = 191 annehmen
 * geänderte Funkgruppe wird sofort aktiviert und im Flash gespeichert
 * wird beim Einschalten aus dem Flash wieder hergestellt
 * eine Fernsteuerung kann mehrere Modelle (Calli:bot) mit verschiedenen Funkgruppen steuern
+
+* nach dem Ändern der Funkgruppe
+  * Funktion (Sender) wird auf *nicht gestartet* gestellt, wie nach Reset
+  * Empfänger mit der gleichen Funkgruppe blinkt grün, reagiert aber nicht
+  * Funkgruppe kann bis zum richtigen Empfänger weiter geschaltet werden
+  * erst nach **A+B geklickt** blinkt der Empfänger blau und kann ferngesteuert werden
+  * *Funktion* wird auf Standardwert *Fahren und Lenken mit Joystick* eingestellt
 
 ### Empfänger (Calliope im ferngesteuerten Modell) zurücksetzen
 
