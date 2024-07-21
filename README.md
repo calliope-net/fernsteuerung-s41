@@ -148,10 +148,10 @@ y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 
 hex|bit|Funktion|bei Ereignis von einem Sensor
 ---|---|---|---
-0x00|<code>..00....</code>|Fernsteuerung 6 Motoren|Stop bei Hindernis
-0x10|<code>..01....</code>|Fernsteuerung ein Motor M0|wechselt zum *Programm Sensoren*
-0x20|<code>..10....</code>|Programm 5 Strecken|Stop bei Hindernis
-0x30|<code>..11....</code>|Programm Sensoren|wechselt zum Ereignis-Block
+0x00|<code>..00....</code>|mit Joystick fernsteuern|Stop bei Hindernis
+0x10|<code>..01....</code>|Programm fernstarten|wie beim Empfänger programmiert
+0x20|<code>..10....</code>|Fahrplan senden|Stop bei Hindernis
+0x30|<code>..11....</code>|Sensoren fernprogrammieren|wechselt zum Ereignis-Block
 
 * 5 Bit aktivierte Motoren (M1 MA MB MC MD) aus Steuer-Byte 3 <code>..xxxxxx</code>
   * zeigt in der Regel an, an welchen Motor die Daten vom Joystick gesendet werden
