@@ -16,7 +16,7 @@ Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** u
 * kann Werte von 0xA0 = 160 bis 0xBF = 191 annehmen
 * geänderte Funkgruppe wird sofort aktiviert und im Flash gespeichert
 * wird beim Einschalten aus dem Flash wieder hergestellt
-* eine Fernsteuerung kann mehrere Modelle (Calli:bot) mit verschiedenen Funkgruppen steuern
+* eine Fernsteuerung kann mehrere Modelle mit verschiedenen Funkgruppen steuern
 
 * nach dem Ändern der Funkgruppe
   * Funktion (Sender) wird auf *nicht gestartet* gestellt, wie nach Reset
