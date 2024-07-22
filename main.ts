@@ -36,7 +36,8 @@ function modell_Callibot () {
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mb, btf.eSensor.b6Abstand, true)
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eSensor.b6Abstand, true)
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eSensor.b6Abstand, true)
-        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.m1, sender.sender_ButtonB_Switch())
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.f1, true)
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.f2, sender.sender_ButtonB_Switch())
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
 }
