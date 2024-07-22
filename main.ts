@@ -24,11 +24,11 @@ function modell_Callibot () {
     } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
         sender.send20Strecken(
         btf.btf_sendBuffer19(),
-        sender.sender_programmSchritt(192, 31, 40),
-        sender.sender_programmSchritt(64, 31, 40),
-        sender.sender_programmSchritt(255, 16, 20),
-        sender.sender_programmSchritt(192, 1, 150),
-        sender.sender_programmSchritt(1, 16, 20)
+        sender.sender_Strecke(192, 31, 40),
+        sender.sender_Strecke(64, 31, 40),
+        sender.sender_Strecke(255, 16, 20),
+        sender.sender_Strecke(192, 1, 150),
+        sender.sender_Strecke(1, 16, 20)
         )
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u2)
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m1, btf.eSensor.b6Abstand, true)
