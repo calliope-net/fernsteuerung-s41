@@ -21,7 +21,7 @@ function modell_Callibot () {
         btf.comment(btf.btf_text("MC dauerhaft Schleife"))
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.mc, sender.sender_ButtonB_Switch())
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.md, sender.sender_ButtonB_Switch())
-    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
+    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan) && sender.sender_ButtonA_Switch()) {
         sender.send20Strecken(
         btf.btf_sendBuffer19(),
         sender.sender_Strecke(192, 31, 40),
@@ -31,8 +31,16 @@ function modell_Callibot () {
         sender.sender_Strecke(1, 16, 20)
         )
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u2)
-        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.f1, true)
-        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.f2, sender.sender_ButtonB_Switch())
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.m1, true)
+    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan) && sender.sender_ButtonB_Switch()) {
+        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
+        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.ma, btf.eBufferOffset.b0_Motor, 192)
+        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mb, btf.eBufferOffset.b0_Motor, 64)
+        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.ma, btf.eBufferOffset.b2_Fahrstrecke, 25)
+        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mb, btf.eBufferOffset.b2_Fahrstrecke, 25)
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.ma, true)
+    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
+        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
 }
