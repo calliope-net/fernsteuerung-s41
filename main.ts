@@ -33,17 +33,13 @@ function modell_Callibot () {
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u2)
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.m1, true)
     } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan) && sender.sender_ButtonB_Switch()) {
-        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.ma, btf.eBufferOffset.b0_Motor, 192)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mb, btf.eBufferOffset.b0_Motor, 64)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.ma, btf.eBufferOffset.b2_Fahrstrecke, 6)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mb, btf.eBufferOffset.b2_Fahrstrecke, 6)
+        sender.send2x2Motoren(
+        btf.btf_sendBuffer19(),
+        sender.sender_2MotorenEncoder(192, 64, 6, 6),
+        sender.sender_2MotorenEncoder(255, 255, 30, 30),
+        4
+        )
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.ma, true)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b0_Motor, 255)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b0_Motor, 255)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.mc, btf.eBufferOffset.b2_Fahrstrecke, 30)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.md, btf.eBufferOffset.b2_Fahrstrecke, 30)
-        btf.setByte(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eBufferOffset.b1_Servo, 4)
     } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
         btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
     }
