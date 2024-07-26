@@ -47,7 +47,7 @@ function modell_Callibot () {
 }
 input.onButtonEvent(Button.AB, btf.buttonEventValue(ButtonEvent.Hold), function () {
     sender.setSendReset(true)
-    sender.zeigeModellImage()
+    sender.zeigeModellImagePause(3000)
 })
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
