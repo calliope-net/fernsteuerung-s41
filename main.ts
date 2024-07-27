@@ -108,7 +108,5 @@ loops.everyInterval(400, function () {
         btf.zeige5x5Buffer(btf.btf_sendBuffer19())
         btf.zeige5x5Joystick(btf.btf_sendBuffer19())
         basic.turnRgbLedOff()
-    } else if (!(btf.simulator())) {
-        btf.sendData(btf.createBuffer(4))
     }
 })
