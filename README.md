@@ -165,7 +165,9 @@ y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 <code>2</code>|<code>6</code>|MC|2|2
 <code>1</code>|<code>5</code>|MD|1|1
 
-* 8 LEDs <code>x80</code> bis <code>x01</code> zeigen als 2 HEX Ziffern die Funkgruppe an: 0xA0 bis 0xBF
+* 8 LEDs <code>1</code> bis <code>8</code> zeigen die Funkgruppe (= Modell) an
+* es gilt die Anzahl der leuchtenden LED, die "kleineren Nummern" bleiben immer an
+* so kann beim fahrenden Modell leichter die Funkgruppe abgelesen werden, um die Fernbedienung darauf einzustellen
 
 > alle anderen LEDs zeigen Daten aus dem Datenpaket (19 Byte Buffer *sendData* oder *receivedData*)
 
