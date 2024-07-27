@@ -19,8 +19,8 @@ Vor dem ersten Start kann noch das Modell geändert werden, nach **A+B geklickt*
 Der Wechsel zwischen den Modellen ist besonders einfach, weil der Sender die Funktion und den Status der Schalter von jeder Funkgruppe speichert und nach dem zurück schalten wieder in dem selben Zustand ist wie das Modell verlassen wurde.
 Die Bedienung kann lückenlos fortgesetzt werden und beginnt nicht von vorn. Die gespeicherten anderen Modelle werden beim Ausschalten vergessen. Das zuletzt gewählte Modell und die Funkgruppe werden aber aus dem Flash beim Einschalten wieder hergestellt.
 
-Schließlich gibt es noch die 6. Tastenkombination **A+B halten**. Diese sendet *zurücksetzen* an das Modell, wenn eine Bluetooth Verbindung besteht. Der Empfänger Calliope startet neu.
-Der Sender muss dann mit **A+B geklickt** die Bluetooth Übertragung erst wieder starten und beginnt mit der Funktion *Fahren und Lenken mit Joystick*.
+Schließlich gibt es noch die 6. Tastenkombination **A+B halten**. Diese sendet *zurücksetzen* an das Modell, wenn eine Bluetooth Verbindung besteht. Der Empfänger-Calliope startet neu.
+Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung erst wieder starten und beginnt mit der Funktion *Fahren und Lenken mit Joystick*.
 
 
 ### Ändern der Funkgruppe (am Sender und Empfänger)
@@ -37,13 +37,6 @@ Der Sender muss dann mit **A+B geklickt** die Bluetooth Übertragung erst wieder
 * ändern und speichern im Flash gilt auch für den Empfänger-Calliope
 * die Funktion beim Sender-Calliope ist oben beschrieben
 
-
-### Empfänger (Calliope im ferngesteuerten Modell) zurücksetzen
-
-> am Sender Tasten **A+B halten**, wenn eine Bluetooth Verbindung besteht
-
-* Modelle mit Relais schalten aus
-* Calli:bot startet neu
 
 ### Bedienung der Fernsteuerung 'Sender mit Joystick'
 
