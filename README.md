@@ -167,7 +167,7 @@ y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 
 * 8 LEDs <code>1</code> bis <code>8</code> zeigen die Funkgruppe (= Modell) an
 * es gilt die Anzahl der leuchtenden LED, die "kleineren Nummern" bleiben immer an
-* so kann beim fahrenden Modell leichter die Funkgruppe abgelesen werden, um die Fernbedienung darauf einzustellen
+* die Länge des Balkens zeigt die Funkgruppe an, die beim Sender einzustellen ist
 
 > alle anderen LEDs zeigen Daten aus dem Datenpaket (19 Byte Buffer *sendData* oder *receivedData*)
 
