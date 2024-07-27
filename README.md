@@ -40,7 +40,7 @@ Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung er
 
 ### Bedienung der Fernsteuerung 'Sender mit Joystick'
 
-* 0 Auswahl des Modells, welches ferngesteuert wird
+* *0 Auswahl des Modells*, welches ferngesteuert wird
 * erfolgt bei jeder Funkgruppe getrennt
 * ist nur vor dem ersten Start möglich
   * **A geklickt** (-) oder **B geklickt** (+)
