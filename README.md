@@ -3,9 +3,9 @@
 
 Mit einem Calliope mini (jede Version) und einem Joystick können über Bluetooth 8 Modelle ferngesteuert werden. Durch Umschaltung der Funkgruppe kann ein Modell ausgewählt werden. 
 Die anderen Modelle können inzwischen autonom fahren, bis die Fernsteuerung wieder übernommen wird. Modelle können mehrere Calli:bot sein, aber auch selbst gebaute Modelle mit 
-fischertechnik Motor und Servo. Bei einem Modell können auch bis 6 Motoren ferngesteuert werden.
+fischertechnik Motor und Servo. Bei einem Modell können bis 6 Motoren ferngesteuert werden.
 
-Für den Sender wird nur ein Calliope und ein Joystick benötigt. Die Bedienung mehrerer Menüebenen erfolgt mit den zwei Tasten A und B. Der aktuelle Status wird im 5x5 Display binär angezeigt.
+Für den Sender wird nur ein Calliope und ein Joystick benötigt. Die Bedienung mehrerer Menüebenen erfolgt mit den zwei Tasten A und B. Der aktuelle Status wird im 5x5 Display und der RGB LED binär angezeigt.
 Die selbe Anzeige ist auch beim Empfänger zu sehen. Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** und **halten** genutzt. Die Bedienung wird nachfolgend beschrieben. 
 
 ### Ändern der Funkgruppe (am Sender und Empfänger)
