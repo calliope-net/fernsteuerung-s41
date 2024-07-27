@@ -5,7 +5,8 @@ Mit einem Calliope mini (jede Version) und einem Joystick können über Bluetoot
 Die anderen Modelle können inzwischen autonom fahren, bis die Fernsteuerung wieder übernommen wird. Modelle können mehrere Calli:bot sein, aber auch selbst gebaute Modelle mit 
 fischertechnik Motor und Servo. Bei einem Modell können bis 6 Motoren ferngesteuert werden.
 
-Für den Sender wird nur ein Calliope und ein Joystick benötigt. Die Bedienung erfolgt mit den zwei Tasten A und B. Der aktuelle Status wird im 5x5 Display und der RGB LED binär angezeigt.
+Für den Sender wird nur ein Calliope und ein Joystick benötigt. Der Joystick dient zum Fahren und Lenken. 
+Die Bedienung der Funktionen erfolgt mit den zwei Tasten A und B. Der aktuelle Status wird im 5x5 Display und der RGB LED binär angezeigt.
 Die selbe Anzeige ist auch beim Empfänger zu sehen. Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** und **halten** genutzt.
 
 Beim Einschalten wird aus dem Flash die zuletzt gewählte Funkgruppe und das Modell wieder hergestellt. Vor dem ersten Start kann noch das Modell geändert werden.
