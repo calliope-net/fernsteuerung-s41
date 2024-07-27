@@ -16,9 +16,10 @@ Der Wechsel der Funkgruppe, um ein anderes Modell fernzusteuern, ist jederzeit m
 Vor dem ersten Start kann noch das Modell geändert werden, nach **A+B geklickt** nicht mehr. Bei dem gewählten Modell leuchten die selben (1-8) LEDs und die RGB LED blinkt blau wenn Bluetooth Daten von der Fernsteuerung ankommen.
 
 Der Wechsel zwischen den Modellen ist besonders einfach, weil der Sender die Funktion und den Status der Schalter von jeder Funkgruppe speichert und nach dem zurück schalten wieder in dem selben Zustand ist wie das Modell verlassen wurde.
-Die Bedienung kann lückenlos fortgesetzt werden und beginnt nicht von vorn.
+Die Bedienung kann lückenlos fortgesetzt werden und beginnt nicht von vorn. Die gespeicherten anderen Modelle werden beim Ausschalten vergessen. Das zuletzt gewählte Modell und die Funkgruppe werden aber aus dem Flash beim Einschalten wieder hergestellt.
 
-
+Schließlich gibt es noch die 6. Tastenkombination **A+B halten**. Diese sendet *zurücksetzen* an das Modell, wenn eine Bluetooth Verbindung besteht. Der Empfänger Calliope startet neu.
+Der Sender muss dann mit **A+B geklickt** die Bluetooth Übertragung erst wieder starten und beginnt mit der Funktion *Fahren und Lenken mit Joystick*.
 
 
 ### Ändern der Funkgruppe (am Sender und Empfänger)
