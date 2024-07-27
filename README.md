@@ -169,7 +169,7 @@ y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 * es gilt die Anzahl der leuchtenden LED, die "kleineren Nummern" bleiben immer an
 * die Länge des Balkens zeigt die Funkgruppe an, die beim Sender einzustellen ist
 
-> alle anderen LEDs zeigen Daten aus dem Datenpaket (19 Byte Buffer *sendData* oder *receivedData*)
+> alle anderen LEDs zeigen Daten aus dem Datenpaket (*sendData* oder *receivedData*)
 
 * 2 Bit Betriebsart <code>b5 b4</code> aus Steuer Byte 0 <code>..xx....</code>
 
