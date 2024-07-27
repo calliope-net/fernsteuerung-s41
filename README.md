@@ -160,10 +160,10 @@ Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung er
 y0|y1|aktiviert|↕ Motor|↔ Servo/Motor
 ---|---|---|---|---
 <code>b5</code>|<code>b4</code>|M1|16|16
-<code>x80</code>|<code>x08</code>|MA|8|8
-<code>x40</code>|<code>x04</code>|MB|4|4
-<code>x20</code>|<code>x02</code>|MC|2|2
-<code>x10</code>|<code>x01</code>|MD|1|1
+<code>4</code>|<code>8</code>|MA|8|8
+<code>3</code>|<code>7</code>|MB|4|4
+<code>2</code>|<code>6</code>|MC|2|2
+<code>1</code>|<code>5</code>|MD|1|1
 
 * 8 LEDs <code>x80</code> bis <code>x01</code> zeigen als 2 HEX Ziffern die Funkgruppe an: 0xA0 bis 0xBF
 
