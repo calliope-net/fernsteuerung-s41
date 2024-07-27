@@ -40,11 +40,10 @@ Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung er
 
 ### Bedienung der Fernsteuerung 'Sender mit Joystick'
 
-> Bedienung mit den Tasten A und B **geklickt** (kurz drücken und loslassen - nicht 'halten')
-
 * 0 Auswahl des Modells, welches ferngesteuert wird
+* erfolgt bei jeder Funkgruppe getrennt
+* ist nur vor dem ersten Start möglich
   * **A geklickt** (-) oder **B geklickt** (+)
-    * ist nur unmittelbar nach Reset möglich
     * Modell umschalten (wird als Bild angezeigt):
     * 1.1 Calli:bot 2
     * 1.2 Maker Kit Car mit Calliope v3 (Leiterplatte) optional auch mit Gabelstapler
@@ -52,11 +51,12 @@ Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung er
     * 1.4 CaR 4 (Calliope auf Rädern Version 4)
   * **A+B geklickt**
     * geändertes Modell im Flash speichern, wird beim Einschalten wieder hergestellt
-    * nach dem Einschalten muss nur einmal **A+B geklickt** werden
+    * nach dem Einschalten muss zum Starten nur einmal **A+B geklickt** werden
     * Sender beginnt kontinuierlich über Bluetooth zu senden (aller 400 ms)
     * zurück zu *0 Auswahl des Modells* nur mit Reset
 
 * jedes Modell kann eine oder mehrere Funktionen haben
+* Funktion und Schalter werden pro Funkgruppe gespeichert und wieder hergestellt
 * Standard Funktionen der Tasten, wenn beim Modell nichts anderes angegeben ist
   * **A geklickt** 
     * Block *Knopf A Schalter* wechselt zwischen true und false
@@ -74,9 +74,9 @@ Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung er
     * **B geklickt**
       * schaltet Spursensor an und aus (fährt auf schwarzer Linie nicht weiter)
     * **A+B geklickt**
-      * umschalten auf Funktion Calli:bot: *Programm fernstarten*
+      * umschalten auf Funktion 1.2 Calli:bot: *Programm fernstarten*
       * schaltet Ultraschall Sensor an und Spursensor aus
-  * 1.2 Calli:bot: *Programm fernstarten*:
+  * 1.2 Calli:bot: *Programm fernstarten*
     * auf Calli:bot gespeicherters *Programm fernstarten*
       * Programm wird mit den Parametern vom Sender einmal gestartet
       * fährt ohne Bluetooth Verbindung vom Sender autonom weiter
@@ -93,7 +93,25 @@ Der Sender-Calliope muss dann mit **A+B geklickt** die Bluetooth Übertragung er
         * so können mehrere Calli:bot hintereinander fahren, ohne aneinander zu stoßen
         * Fernsteuerung mit Joystick kann jederzeit wieder übernommen werden
     * **A+B geklickt**
+      * umschalten auf Funktion 1.3 *Fahrplan senden*
+  * 1.3 Calli:bot: *Fahrplan senden*
+    * **A geklickt**
+      * sendet 5 Strecken mit den Parametern: Fahren, Lenken, Länge
+      * ohne Encoder werden die cm als zehntel Sekunden gewertet
+        * 1 30 cm Kurve nach rechts
+        * 2 die selbe Strecke zurück
+        * 3 20 cm schnell vorwärts
+        * 4 einen Kreis nach links
+        * 5 20 cm schnell rückwärts
+    * **B geklickt**
+      * sendet 2 Strecken, Parameter: Motor links, rechts, Encoder links, rechts
+      * ohne Encoder wird der links Wert als zehntel Sekunden gewertet
+        * 1 30 cm vorwärts
+        * 2 eine viertel Drehung
+        * wird 8 mal wiederholt, soll zweimal ein Quadrat fahren
+    * **A+B geklickt**
       * zurück zu 1.1 *Fahren und Lenken mit Joystick*
+
 
 * 2 Modell: Maker Kit Car mit Calliope v3, optional auch mit Gabelstapler
   * 2.1 *Fahren und Lenken mit Joystick*
