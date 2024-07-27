@@ -24,10 +24,10 @@ function modell_Callibot () {
     } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan) && sender.sender_ButtonA_Switch()) {
         sender.send20Strecken(
         btf.btf_sendBuffer19(),
-        sender.sender_Strecke(192, 31, 40),
-        sender.sender_Strecke(64, 31, 40),
+        sender.sender_Strecke(192, 31, 30),
+        sender.sender_Strecke(64, 31, 30),
         sender.sender_Strecke(255, 16, 20),
-        sender.sender_Strecke(192, 1, 150),
+        sender.sender_Strecke(192, 1, 115),
         sender.sender_Strecke(1, 16, 20)
         )
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u2)
@@ -35,9 +35,9 @@ function modell_Callibot () {
     } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan) && sender.sender_ButtonB_Switch()) {
         sender.send2x2Motoren(
         btf.btf_sendBuffer19(),
-        sender.sender_2MotorenEncoder(192, 64, 6, 6),
-        sender.sender_2MotorenEncoder(255, 255, 30, 30),
-        4
+        sender.sender_2MotorenEncoder(240, 240, 30, 30),
+        sender.sender_2MotorenEncoder(160, 96, 216, 216, 1, true),
+        8
         )
         btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.ma, true)
     } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
@@ -47,7 +47,6 @@ function modell_Callibot () {
 }
 input.onButtonEvent(Button.AB, btf.buttonEventValue(ButtonEvent.Hold), function () {
     sender.setSendReset(true)
-    sender.zeigeModellImagePause(3000)
 })
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
