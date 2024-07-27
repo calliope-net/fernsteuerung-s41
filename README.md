@@ -6,7 +6,18 @@ Die anderen Modelle können inzwischen autonom fahren, bis die Fernsteuerung wie
 fischertechnik Motor und Servo. Bei einem Modell können bis 6 Motoren ferngesteuert werden.
 
 Für den Sender wird nur ein Calliope und ein Joystick benötigt. Die Bedienung erfolgt mit den zwei Tasten A und B. Der aktuelle Status wird im 5x5 Display und der RGB LED binär angezeigt.
-Die selbe Anzeige ist auch beim Empfänger zu sehen. Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** und **halten** genutzt. Die Bedienung wird nachfolgend beschrieben. 
+Die selbe Anzeige ist auch beim Empfänger zu sehen. Für die Tasten **Knopf A** und **Knopf B** werden die Ereignisse **geklickt** und **halten** genutzt.
+
+Beim Einschalten wird aus dem Flash die zuletzt gewählte Funkgruppe und das Modell wieder hergestellt. Vor dem ersten Start kann noch das Modell geändert werden.
+Das Senden der Daten über Bluetooth (aller 400 ms) beginnt nach **A+B geklickt** mit der Funktion *Fahren und Lenken mit Joystick*.
+Mit **A+B geklickt** wird bei dem selben Modell die Funktion weiter geschaltet. Mit **A geklickt** oder **B geklickt** wird die gewählte Funktion bedient. So kann Licht oder der Ultraschallsensor an und aus geschaltet werden.
+
+Der Wechsel der Funkgruppe, um ein anderes Modell fernzusteuern, ist jederzeit möglich mit **A halten** oder **B halten**. Die Funkgruppe wird im Display links durch die Anzahl der rot leuchtenden (1-8) LEDs angezeigt. 
+Vor dem ersten Start kann noch das Modell geändert werden, nach **A+B geklickt** nicht mehr. Bei dem gewählten Modell leuchten die selben (1-8) LEDs und die RGB LED blinkt blau wenn Bluetooth Daten von der Fernsteuerung ankommen.
+
+Der Wechsel zwischen den Modellen ist besonders einfach, weil der Sender die Funktion und den Status der Schalter von jeder Funkgruppe speichert und nach dem zurück schalten wieder in dem selben Zustand ist wie das Modell verlassen wurde.
+Die Bedienung kann lückenlos fortgesetzt werden und beginnt nicht von vorn.
+
 
 
 
