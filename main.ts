@@ -67,7 +67,7 @@ function modell_MKC () {
         sender.sender_xmotor(),
         sender.sender_servo16(),
         sender.sender_ButtonA_Switch(),
-        btf.e3Abstand.u2
+        btf.e3Abstand.u3
         )
         btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.sender_ButtonB_Switch())
     } else if (sender.isFunktion(sender.eFunktion.m0_m1_s0)) {
