@@ -48,6 +48,23 @@ function modell_Callibot () {
 input.onButtonEvent(Button.AB, btf.buttonEventValue(ButtonEvent.Hold), function () {
     sender.setSendReset(true)
 })
+function modell_MKC_Kran () {
+    if (sender.isFunktion(sender.eFunktion.m0_s0)) {
+        sender.send00M0Joystick(
+        btf.btf_sendBuffer19(),
+        sender.sender_xmotor(),
+        sender.sender_servo16(),
+        false,
+        btf.e3Abstand.u3
+        )
+    } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
+        sender.send00MABKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
+    } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
+        sender.send00MCBKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
+    }
+    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
+    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.sender_ButtonA_Switch())
+}
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     sender.buttonA()
 })
@@ -79,14 +96,21 @@ function modell_MKC () {
         false,
         btf.e3Abstand.u2
         )
-    } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
-        sender.send00MABKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
-    } else if (sender.isFunktion(sender.eFunktion.mc_mb)) {
-        sender.send00MCBKran(btf.btf_sendBuffer19(), sender.sender_xmotor(), sender.sender_ymotor())
+    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan) && sender.sender_ButtonA_Switch()) {
+        sender.send20Strecken(
+        btf.btf_sendBuffer19(),
+        sender.sender_Strecke(192, 31, 30),
+        sender.sender_Strecke(64, 31, 30),
+        sender.sender_Strecke(255, 16, 20),
+        sender.sender_Strecke(192, 1, 115),
+        sender.sender_Strecke(1, 16, 20)
+        )
+        btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u2)
+        btf.setaktiviert(btf.btf_sendBuffer19(), btf.e3aktiviert.m1, true)
+    } else if (sender.isFunktion(sender.eFunktion.m1abcd_fahrplan)) {
+        btf.setBetriebsart(btf.btf_sendBuffer19(), btf.e0Betriebsart.p2Fahrplan)
     }
     btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b0, sender.joystickButtonPosition())
-    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b1, sender.sender_ButtonA_Switch())
-    btf.setSchalter(btf.btf_sendBuffer19(), btf.e0Schalter.b2, sender.sender_ButtonB_Switch())
 }
 input.onButtonEvent(Button.A, btf.buttonEventValue(ButtonEvent.Hold), function () {
     btf.buttonAhold()
@@ -102,7 +126,7 @@ loops.everyInterval(400, function () {
             modell_MKC()
         } else if (sender.isModell(sender.eModell.mkck)) {
             btf.comment(sender.multiswitchGrove(true))
-            modell_MKC()
+            modell_MKC_Kran()
         }
         btf.sendData(btf.btf_sendBuffer19())
         btf.zeige5x5Buffer(btf.btf_sendBuffer19())
