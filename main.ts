@@ -69,13 +69,14 @@ function modell_MKC () {
         sender.sender_ButtonA_Switch(),
         btf.e3Abstand.u2
         )
+        btf.setSensor(btf.btf_sendBuffer19(), btf.eBufferPointer.m0, btf.eSensor.b5Spur, sender.sender_ButtonB_Switch())
     } else if (sender.isFunktion(sender.eFunktion.m0_m1_s0)) {
         sender.send00M01Gabelstapler(
         btf.btf_sendBuffer19(),
         sender.sender_xmotor(),
         sender.sender_ButtonAB_Counter(),
         sender.sender_ymotor(),
-        sender.sender_ButtonA_Switch(),
+        false,
         btf.e3Abstand.u2
         )
     } else if (sender.isFunktion(sender.eFunktion.ma_mb)) {
