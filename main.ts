@@ -102,7 +102,7 @@ function modell_MKC () {
         sender.sender_Strecke(192, 31, 30),
         sender.sender_Strecke(64, 31, 30),
         sender.sender_Strecke(255, 16, 20),
-        sender.sender_Strecke(192, 1, 115),
+        sender.sender_Strecke(220, 4, 160),
         sender.sender_Strecke(1, 16, 20)
         )
         btf.setAbstand(btf.btf_sendBuffer19(), btf.e3Abstand.u2)
